@@ -96,7 +96,7 @@ public class WearDeviceOrientationProfile extends DeviceOrientationProfile {
 
             getManager().sendMessageToWear(nodeId,
                     WearConst.DEVICE_TO_WEAR_DEIVCEORIENTATION_REGISTER,
-                    "", new OnMessageResultListener() {
+                    "50000", new OnMessageResultListener() {    //0604
                 @Override
                 public void onResult(final SendMessageResult result) {
                     if (!result.getStatus().isSuccess()) {
